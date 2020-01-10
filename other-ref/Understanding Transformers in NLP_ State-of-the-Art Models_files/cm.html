@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- saved from url=(0156)https://sibautomation.com/cm.html?key=eoah69gejo3s70eho56z0#cuid=8b182a97-0fce-40bb-a0a9-3f2b80860e79&allow_cookie=&email_id=anand%40analyticsvidhya.com&i=0 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+    function uuidV4() { var d = new Date().getTime(); return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c){ var r = (d + Math.random() * 16) % 16 | 0; d = Math.floor(d / 16); return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16);});}
+    function rq_send(d, cb) {var l = 'https://in-automate.sendinblue.com/cm?' + qs_encode(d), x = new XMLHttpRequest(); x.open("GET", l, true); x.onreadystatechange = function() { if (x.readyState == XMLHttpRequest.DONE && x.status == 204) { cb && cb(null, this.response);}}; x.send(null);}
+    function ad_cm(u) { var b = new window.Image;b.src = 'https://d.adroll.com/cm/sib/in?id=' + u;b.setAttribute("width", "1"); b.setAttribute("height", "1");b.setAttribute("border", "0"); ((window.document.getElementsByTagName("head") || [null])[0] || (window.document.getElementsByTagName("body") || [null])[0] || window.document.getElementsByTagName("script")[0].parentNode).appendChild(b);}
+    function ck_set(n, v, y) { var d = new Date(); d.setHours(395 * 24); var e = "; expires=" + d.toGMTString(); document.cookie = n + "=" + v + e + ";path=/;Secure;SameSite=None";}
+    function ck_get(n) { var cn = n + "=", ca = document.cookie.split(';'); for (var i = 0; i < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == ' ') c = c.substring(1, c.length); if (c.indexOf(cn) == 0) return c.substring(cn.length, c.length);} return '';}
+    function qs_encode(o) { var str = []; for (var p in o) { o.hasOwnProperty(p) && str.push(encodeURIComponent(p) + "=" + encodeURIComponent(o[p]));}return str.join("&");}
+    function qs_decode(qs) { var o = {}; if (typeof qs !== 'string' || qs.length === 0) return o; qs = qs.split('&'); for (var i = 0; i < qs.length; ++i) { var x = qs[i], idx = x.indexOf('='), kstr, vstr, k, v;if (idx >= 0) { kstr = x.substr(0, idx); vstr = x.substr(idx + 1); } else { kstr = x; vstr = '';}k = decodeURIComponent(kstr); v = decodeURIComponent(vstr);if (!Object.prototype.hasOwnProperty.call(o, k)) { o[k] = v; } else if (Array.isArray(o[k])) { o[k].push(v);} else {o[k] = [o[k], v];}} return o;}
+    var client_id = "",makey = "eoah69gejo3s70eho56z0", adroll_adv_id = "", adroll_pix_id = "",cm = {},qs = qs_decode(window.location.hash.substring(1)); qs.type = qs.type || 'identify', uuid = ck_get('uuid') || uuidV4(); ck_set('uuid', uuid); cm.uuid = uuid, (makey && (cm.key = makey)), (client_id && (cm.client_id = client_id));(qs.trans && (cm.trans = qs.trans));
+    if (qs.user_id) { cm.user_id = qs.user_id;  } else if (qs.message_id) { cm.message_id = qs.message_id;} else if (qs.cuid) {cm.cuid = qs.cuid;} rq_send(cm);
+    if ((qs.allow_cookie && qs.allow_cookie == "allow") && adroll_adv_id) {
+        window.adroll_user_identifier = cm.uuid; var s = document.createElement("script"); s.setAttribute("async", "true"); s.type = "text/javascript", s.src = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com") + "/j/roundtrip.js"; ((document.getElementsByTagName("head") || [null])[0] || document.getElementsByTagName("script")[0].parentNode).appendChild(s);
+        window.onhashchange = function() { ad_cm(uuid); qs.type && window.__adroll && (window.__adroll[qs.type]({userId: uuid}));}; window.onhashchange();
+    }
+    </script>
+</head>
+<body>
+
+
+</body></html>
